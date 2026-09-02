@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Salário Final do Funcionário</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">	
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active"  href="index.html">Pagina Inicial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active"  href="Pessoa.html">Pessoa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="Produto.html">Produto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="Nota.html">Nota</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="Funcionario.html">Funcionário</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="Triangulo.html">Triângulo</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br><br>
+<h1 class="text-center">Calcule seu Salário</h1>
+<br>
+<div class="container">
+    <form action="/FelipeGamezSanches/Projeto/public/index.php/salario" method="post">
+
+      <label class="form-label">Nome:</label>
+		  <input type="text" class="form-control border-dark" name="txtNome" placeholder="Digite seu nome"><br>
+
+      <label class="form-label">Valor Hora:</label>
+		  <input type="number" class="form-control border-dark" name="txtValorHora" placeholder="Digite o valor das horas" step="any"><br>
+
+      <label class="form-label">Valor Hora Extra:</label>
+		  <input type="number" class="form-control border-dark" name="txtValorHoraExtra" placeholder="Digite o valor das horas extra" step="any"><br>
+		  
+      <label class="form-label">Horas:</label>
+      <input type="number" class="form-control border-dark" name="txtQtdHoras" placeholder="Digite o número de horas" step="any"><br>
+		  
+      <label class="form-label">Horas Extra:</label>
+      <input type="number" class="form-control border-dark" name="txtQtdHorasExtra" placeholder="Digite o número de horas extra" step="any"><br>
+		  
+      <button type="submit" class="btn btn-primary">Enviar</button>
+
+	  </form>
+</div>
+
+</body>
+</html>
